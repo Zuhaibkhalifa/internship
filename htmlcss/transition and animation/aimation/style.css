@@ -1,0 +1,63 @@
+*{
+    background-color: indigo;
+}
+section div{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(128, 226, 229);
+    background-color: hotpink;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+section div:nth-of-type(1){
+   animation-name: on;
+   animation-duration: 3s;
+}
+@keyframes on{
+    from{transform: translateX(0)}
+    to{transform: translateX(800px)}
+}
+section div:nth-of-type(2){
+    animation-name: off;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+@keyframes off{
+    from{transform: translateY(0);}
+    to{transform: translateX(500px);}
+}
+section div:nth-of-type(3){
+    animation-name: off;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-iteration-count: 5;
+}
+section div:nth-of-type(4){
+    animation-name: off;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+section div:nth-of-type(5){
+    animation-name: off;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-direction:alternate;
+    animation-timing-function: ease-out;
+}
+section div:nth-of-type(6){
+    opacity: 0.5;
+    animation-name: win;
+    animation: win 5s linear infinite reverse;
+
+}
+
+@keyframes win{
+    from{transform:translateY(0)}
+    to{transform:translateY(200px)}
+}
+

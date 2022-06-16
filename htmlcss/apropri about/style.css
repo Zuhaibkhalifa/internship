@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+}
+h3{
+  font-size: 2.5rem;
+  font-family: 'Montserrat',sans-serif;
+  color: #d89120;
+  padding: 2rem;
+}
+.a {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+h2 {
+  font-size: 3rem;
+  color: #f5a425;
+  padding: 1rem;
+  border-bottom: 2px solid #d89120;
+  font-family: "Montserrat", sans-serif;
+  display: inline;
+}
+p {
+  font-size: 1.2rem;
+  padding: 2rem;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  border: 5px solid blue;
+  height: 15vh;
+  text-align: center;
+}
+.menu {
+  text-align: center;
+  min-height: 20vh;
+  border: 5px solid beige;
+}
+h1 {
+  text-align: center;
+}
+.wrapper {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  padding: 4rem;
+  tex
+}
+.vision-image img {
+  width: 100%;
+}
+.approach-img img {
+  width: 100%;
+}
+.process-image img {
+  width: 100%;
+}
+.ceo-image img {
+  width: 100%;
+}
+footer {
+  border: 5px solid blue;
+  height: 50vh;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .wrapper img {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+  }
+  p {
+    font-size: 1rem;
+    padding: 2rem 0;
+  }
+  .Vision {
+    grid-row: 3;
+  }
+  .process {
+    grid-row: 7;
+  }
+}
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 0.8rem;
+  }
+}

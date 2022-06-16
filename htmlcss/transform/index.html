@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Transform Properties</h1>
+    <p>The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements.</p>
+    <h2>Syntax: none&#124;transform-function	&#124;initial	&#124;inherit;</h2>
+    <section>
+        <div>
+            <h2>Matrix</h2>
+             <p>matrix(n,n,n,n,n,n) = Defines a 2D transformation using a matrix of six values</p>
+             <p>matrix3d(n(16)) = Defines a 3D transformation using 4x4 matrix of 16 values </p>        
+        </div>
+        <div><h2>perspective</h2>
+        <p>perspective = Defines a transformation that sets the distance between the user and the plane</p>
+        <h2>syntax</h2>
+        <P>transform: perspective()</P>
+    </div>
+        <div><h2>Rotate</h2>
+        <p>rotate = Defines a 2D rotation</p>
+        <h2>syntax</h2>
+         <p>transform: rotate(angle)</p>
+         <p>transform: rotate3d(x,y,z,angle) defines a 3D rotaion</p>
+         <p>transform: rotateX(angle) 3D rotaion along X-axis</p>   
+         <p>tranform: rotateY(angle) 3d rotaion along Y-axis</p>
+         <p>transform: rotateZ(angle) 3D rotation along Z-axis</p> 
+    </div>
+        <div><h2>Translate</h2>
+        <p>method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis</p>
+        <h2>syntax</h2>
+
+        <p>transform: translate(x,y)2D translation</p>
+         <p>transform: translate3d(x,y,z)3D translation</p>
+         <p>transform: translateX(x)using only the value for the X-axis</p>
+         <p>transform: translateY(y) using only the value for the Y-axis</p>
+         <p>transform: translateZ(z) using only the value for the Z-axis</p>
+    </div>
+        <div><h2>Scale</h2>
+        <p>method increases or decreases the size of an element</p>
+    <h2>syntax</h2>
+     <p>transform: scale(x,y)scale transformation</p>
+     <p>transform: scale3d(x,y,z)3D scale transformation</p>
+     <p>transform: scaleX(x) Defines a scale transformation by giving a value for the Y-axis</p>
+     <p>transform:  scaleZ(y)Defines a 3D scale transformation by giving a value for the Z-axis</p>
+
+</div>
+        <div><h2>Skew</h2>
+            <p>method skews an element along the X-axis by the given angle.</p>
+            <h2>syntax</h2>
+            <p>tranform: skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis</p>
+            <p>tranform: Defines a 2D skew transformation along the X-axis</p>
+            <p>tranform: skewY(angle)	Defines a 2D skew transformation along the Y-axis</p>
+       
+             
+    </div>
+        <div><h2>Multiple Functions</h2>
+        <h2>syntax</h2>
+    <p>
+        tranform: translate() rotate() translateY() .........
+    </p></div>
+        
+    </section>
+    
+</body>
+</html>

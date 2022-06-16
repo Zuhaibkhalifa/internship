@@ -1,0 +1,116 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #c4bbaf;
+}
+h1,h2,h3{
+    text-align: center;
+    text-decoration:underline;
+}
+p,h3{
+    font-size: x-large;
+    text-align: center;
+}
+ul{
+
+    font-size: x-large;
+    margin: 0 800px;
+}
+main div{
+    height: 200px;
+    width: 200px;
+    background-color: #0d1b2a;
+    border: 5px solid #e0e1dd;
+    margin: 10px 20%;
+}
+h4{
+text-align: center;
+background: none;
+color: #e0e1dd;
+}
+div:nth-child(1){
+    transition: all;
+}
+div:nth-child(1):hover{
+    border-radius: 50%;
+    height: 150px;
+    width: 500px;
+    background-color: #147df5;
+}
+div:nth-child(2){
+    transition: 1s;
+}
+div:nth-child(2):hover{
+    border-radius: 60%;
+    height: 150px;
+    width: 800px;
+    background-color: #147df5;
+}
+div:nth-child(3){
+    transition: 5s;
+}
+div:nth-child(3):hover{
+    border-radius: 60%;
+   margin-left: 500px;
+   background-color: #0aff99;
+}
+div:nth-child(4){
+    transition: linear ;
+}
+div:nth-child(4):hover{
+
+    margin-left: 500px;
+    background-color: #a1ff0a;
+}
+div:nth-child(5){
+    transition: ease-in5s;
+}
+div:nth-child(5):hover{
+    border-radius: 60%;
+   margin-top: 500px;
+   background-color: #deff0a;
+}
+div:nth-child(6){
+    transition: ease-out 5s;
+}
+div:nth-child(6):hover{
+    border-radius: 60%;
+   margin-bottom: 500px;
+   background-color: #ffd300;
+}
+div:nth-child(7){
+    transition: ease-in-out 5s;
+}
+div:nth-child(7):hover{
+    border-radius: 60%;
+    margin: 10px;
+    background-color: #bc4749;
+}
+div:nth-child(8){
+    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275) 5s;
+}
+div:nth-child(8):hover{
+    border-radius: 60%;
+    margin: 50%;
+    background-color: #ff8700;
+}
+div:nth-child(9){
+    transition:backgroun-color 5s 5s; 
+}
+div:nth-child(9):hover{
+    border-radius: 60%;
+    margin: 50%;
+    background-color: #bc4749;
+}
+section .frames{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation-name: letsgo;
+    animation-duration: 5s;
+}
+
+@keyframes letsgo{
+    from{transform: translateX(0);}
+    to{transform: translateX(500px);}
+
+}
